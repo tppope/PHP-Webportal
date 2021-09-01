@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>Poloha</title>
+
+    <link rel="icon" href="resources/pictures/internet.png" type="image/gif" sizes="16x16">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/location-style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="javascript/location-script.js"></script>
+</head>
+<body>
+<header id="main-header">
+    <h1 id="main-h1">
+        Poloha
+    </h1>
+</header>
+<section id="main-section">
+    <div onclick="window.location = 'index.html'" id="back-button">
+        Späť
+        <img id="left-arrow" src="resources/pictures/left-arrow.svg" alt="leftarrow">
+    </div>
+    <lottie-player id="location-lottie" src="https://assets2.lottiefiles.com/datafiles/BWweJKuWuiTWcaI/data.json"
+                   background="transparent"
+                   speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+    <lottie-player id="location-error-lottie" src="https://assets8.lottiefiles.com/packages/lf20_f1cFsO.json"
+                   background="transparent" speed="1"
+                   style="width: 150px; height: 150px; display: none"></lottie-player>
+    <div id="error-message" style="display: none">Pri získavaní vašej polohy došlo ku chybe.<br>Skúste to znova prosím.
+    </div>
+
+
+</section>
+<footer>
+    <span>Designed by <a id="footer-href" href="http://147.175.121.202/~xpopikt/7243zadanie1/index.html">Tomáš Popík &copy; </a></span>
+</footer>
+</body>
+</html>

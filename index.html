@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>Webový portál</title>
+
+    <link rel="icon" href="resources/pictures/internet.png" type="image/gif" sizes="16x16">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/index-style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript/index-script.js"></script>
+</head>
+<body>
+<header id="main-header">
+    <h1 id="main-h1">
+        Webový portál
+    </h1>
+</header>
+<section id="main-section">
+    <div class="tile" onclick="window.location = 'weather.html'">
+        <div class="blur" id="weather"></div>
+        <div class="title">Počasie</div>
+    </div>
+    <div class="tile" onclick="window.location = 'location.html'">
+        <div class="blur" id="location"></div>
+        <div class="title">
+            Poloha
+        </div>
+    </div>
+    <div class="tile" onclick="window.location = 'statistics.html'">
+        <div class="blur" id="statistics"></div>
+        <div class="title">
+            Štatistiky
+        </div>
+    </div>
+
+
+</section>
+<footer>
+    <span>Designed by <a id="footer-href" href="http://147.175.121.202/~xpopikt/7243zadanie1/index.html">Tomáš Popík &copy; </a></span>
+</footer>
+</body>
+</html>

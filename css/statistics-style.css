@@ -1,0 +1,187 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+#main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 160px;
+}
+
+#main-h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffc93c;
+    text-align: center;
+}
+
+.content-table {
+    width: 32%;
+}
+
+#main-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-message {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    color: #d00621;
+
+}
+
+#footer-href {
+    color: #ffc93c;
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+#footer-href:hover {
+    color: #ffc94c;
+}
+
+#back-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: left 300ms;
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#back-button:hover {
+    left: 0;
+}
+
+#left-arrow {
+    height: 80%;
+}
+
+#tables {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#stats-content {
+    width: 80%;
+    margin: 20px auto 0 auto;
+}
+
+#mapid {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+th {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+th img {
+    vertical-align: text-bottom;
+}
+
+#loading-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#section-h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#attendance-detail-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffc93c;
+    vertical-align: middle;
+}
+
+#attendance-detail-title img {
+    vertical-align: baseline;
+}
+
+.clickable-th {
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+.clickable-th:hover {
+    background-color: #f5c6cb;
+}
+
+@media (max-width: 728px) {
+    #tables {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #stats-content {
+        width: 95%;
+        margin: 90px auto 0 auto;
+    }
+
+    #mapid {
+        height: 300px;
+    }
+
+    .content-table {
+        width: 100%;
+    }
+}
+
